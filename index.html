@@ -13,60 +13,50 @@
 </head>
 <body>
     <section id="landing">
-        <nav>
             <div class="nav__container">
-             <img src="./assets/logo-2.svg" alt="Logo"></img>
-             <ul class="nav__links">
+              <a href="#" class="nav__logo">
+                <img class="nav__logo" src="./assets/logo-2.svg" alt="Logo"> 
+                <span>Treact</span>
+              </a>
+                <ul class="nav__links">
+                  <!-- Navigation Links -->
+                  <li><a href="#">About</a></li>
+                  <li><a href="#">Blog</a></li>
+                  <li><a href="#">Pricing</a></li>
+                  <li><a href="#">Contact Us</a></li>
+                  <li><a href="#">Login</a></li>
+                  <li><a href="#">Sign Up</a></li>
+                </ul>
+            </div>
+    </section>
+
+
+<main>
+    
+       <header>
+         <div class="header__container">
+           <div class="header__description">
+                <h1>
+                 Beautiful React Templates 
+                 <span class="purple"> for you.</span>
+                </h1>
                 
-             </ul>
+                <p>Our templates are easy to setup, understand and customize. 
+                   Fully modular components with a variety of pages and components.
+                </p>
+            </div>
+            
+             <figure class="header__img--wrapper">
+              <img src="./assets/hero-screenshot.png" alt="Hero">
+              <img src="./assets/customers-logo.png" alt="Customers Logo">
+             </figure>
+        </div>
+       </header>
 
-            <button class="btn__menu" onclick="openMenu()">
-                <i class="fas fa-bars"></i>
-            </button>
-            <div class="menu__backdrop">
-             <button class="btn__menu btn__menu--close" onclick="closeMenu()">
-                 <i class="fas fa-times"></i>
-             </button>
-             <ul class="menu__links">
-              <li class="menu__list">
-                <a href="#" class="menu__link"onclick="closeMenu()">About</a>
-              </li>
-              <li class="menu__list">
-                <a href="#" class="menu__link"onclick="closeMenu()">Blog</a>
-              </li>
-              <li class="menu__list">
-                <a href="#" class="menu__link"onclick="closeMenu()">Pricing</a>
-              </li>
-              <li class="menu__list">
-                <a href="#" class="menu__link"onclick="closeMenu()">Contact Us</a>
-              </li>
-              <li class="menu__list">
-                <a href="#" class="menu__link"onclick="closeMenu()">Login</a>
-              </li>
-              <li class="menu__list">
-                <a href="#" class="menu__link no-cursor"onclick="closeMenu()">Sign Up</a>
-              </li>
-             </ul>
-            </div>
-            </div>
-        </nav>
-        <header>
-            <div class="header__container">
-              <div class="header__description">
-                  <h1>Treact</h1>
-              </div>
-            </div>
-        </header>
+          
 
-                </div>
-                <div class="nav__links">
-                    <a href="#features" class="nav__link">Features</a>
-                    <a href="#quality" class="nav__link">Quality</a>
-                    <a href="#steps" class="nav__link">Steps</a>
-                    <a href="#values" class="nav__link">Values</a>
-                    <a href="#pricing" class="nav__link">Pricing</a>
-                    <a href="#testimonials" class="nav__link">Testimonials</a>
-                    <a href="#start" class="nav__link">Start</a>
-                </div>
-            </div>
-        </nav>
+           
+
+          
+    
+</main>
