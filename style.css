@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Inter', system-ui;
+    font-family: 'Inter', sans-serif;
     color: #243e63;
 }
 
@@ -62,10 +62,12 @@ NAVBAR ↓
 .nav__logo {
    display: flex;
    align-items: center;
+   margin: 8px 0;
    gap: 8px;
    text-decoration: none;
    font-size: 24px;
    font-weight: 900;
+   padding-bottom: 4px;
 }
 
 .nav__logo img {
@@ -176,12 +178,20 @@ HEADER / ABOUT US ↓
     width: 40%;
 }
 
+h1 {
+    font-size: 48px;
+    color:#1a202c;
+    line-height: 1.25;
+}
+
+
 .header__img--wrapper {
     width: 60%;
 }
 
 .header__image {
-    width: 100%;
+    width: 40%;
+    max-width: 768px;
 }
 
 
@@ -190,9 +200,41 @@ header .row {
    max-width: 1200px;
    margin: 0 auto;
    display: flex;
-   flex-direction: column;
+   flex-direction: row;
+   align-items: center;
 }
 
+
+.header__img--wrapper .header__image { 
+    width: 100%;
+}
+
+
+.header__email--btn {
+   z-index: 1;
+   margin: 8px;
+   height: calc(100% - 16px);
+   border-radius: 500px;
+   width: 160px;
+   border: none;
+   background-color: #6415ff;
+   color: #fff;
+   font-weight: 700;
+   font-size: 16px;
+   transition: border-color 300ms;
+}
+
+.header__email--input:focus { 
+    outline: none;
+    border-color: rgb(100, 21, 255);
+}
+
+
+.header__customers {
+    margin-top: 16px;
+    padding-right: 128px;
+    opacity: 0.5;
+}
 
 /* 
 
