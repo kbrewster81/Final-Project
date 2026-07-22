@@ -13,6 +13,9 @@ body {
     overflow-x: hidden;
 }
 
+.img {
+    width: 100%;
+}
 
 .row {
     width: 100%;
@@ -90,9 +93,6 @@ NAVBAR ↓
    max-width: 1200px;
    margin: 0 auto;
 }
-
-
-
 
 
 .btn__menu {
@@ -291,7 +291,6 @@ FEATURES ↓
     line-height: 2;
     font-weight: 500;
 }
-
 
 
 .features .section__para {
@@ -569,10 +568,26 @@ VALUES ↓
     align-items: center;
 }
 
+.value__title {
+    display: flex;
+    align-items: center;
+   gap: 16px;
+}
 
 .value__icon {
-    font-size: 16px;
+  font-size: 16px;
 }
+
+.values__container {
+  display: flex;
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.values__btn {
+    margin-top: 32px;
+}
+
 
 .value:first-child .value__img--wrapper {
     background-color: #9ae6b4;
@@ -586,11 +601,9 @@ VALUES ↓
     background-color: #feb2b2;
 }
 
-
 .value:nth-child(2) .value__icon {
     color: #9b2c2c;
 }
-
 
 #values .row {
     display: flex;
@@ -604,7 +617,7 @@ VALUES ↓
     font-weight: 500;
     max-width: 576px;
     margin: 0 auto;
-    text-align: center;
+    text-align: left;
     color: #7c8ba1;
     line-height: 1.6;
 }
