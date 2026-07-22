@@ -8,8 +8,7 @@
     <title>Treact</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-    <script src="script.js"></script>
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"></script>
 </head>
  <body>
     <section id="landing">
@@ -21,150 +20,232 @@
                 <img class="nav__logo" src="./assets/logo-2.svg" alt="Logo"> 
                 <span>Treact</span>
               </div>
-              <div class="nav__links">
-                <li><a href="#"class="nav__link">About</a></li>
-                <li><a href="#"class="nav__link">Blog</a></li>
-                <li><a href="#"class="nav__link">Pricing</a></li>
-                <li><a href="#"class="nav__link">Contact Us</a></li>
-                <li><a href="#"class="nav__link">Login</a></li>
-                <li><a href="#"class="nav__link--primary">Sign Up</a></li>
+              <ul class="nav__links">
+                  <li><a href="#"class="nav__link">About</a></li>
+                  <li><a href="#"class="nav__link">Blog</a></li>
+                  <li><a href="#"class="nav__link">Pricing</a></li>
+                  <li><a href="#"class="nav__link">Contact Us</a></li>
+                  <li><a href="#"class="nav__link">Login</a></li>
+                  <li><a href="#"class="nav__link--primary">Sign Up</a></li>
+                </ul>
               </div>
            </div>
            <button class="btn__menu" onclick="openMenu()">
              <i class="fas fa-bars"></i>
             </button>
       </nav>
-       <div class="menu">    
-        <div class="menu__backrop">
+      <div class="menu">    
+        <div class="menu__backdrop">
          <button class="btn__menu btn__menu--close" onclick="closeMenu()">
           <i class="fas fa-times"></i>
+         </button>
+       </div>
       </div>
-    </div>
     </section>
+    <section id="header">
        <header>
          <div class="header__container">
           <div class="row">
-           <div class="header__description">
+            <div class="header__description">
                 <h1>
-                 Beautiful React Templates 
-                 <span class="purple"> for you.</span>
+                 Beautiful React Templates<span class="purple"> for you.</span>
                 </h1>
-                 <p>Our templates are easy to setup, understand and customize. 
+                <p>Our templates are easy to setup, understand and customize. 
                    Fully modular components with a variety of pages and components.
-                 </p>
-                 <div class="header__email">
+                </p>
+                <div class="header__email">
                   <input type="email" class="header__email--input" placeholder="Enter your email">
                   <button class="header__email--btn">Get Started</button>
-                 </div>
-                 <p class="header__customers--title">OUR TRUSTED CUSTOMERS</p>
+                </div>
+                <p class="header__customers--title">OUR TRUSTED CUSTOMERS</p>
                  <img class="header__image" src="./assets/customers-logo.png" alt="Customers Logo">
-            </div>
+             </div>
              <figure class="header__img--wrapper">
-              <img class="header__image" src="./assets/hero-screenshot.png" alt="Hero">
-             </figure>
+              <img class="header__image--hero" src="./assets/hero-screenshot.png" alt="Hero">
+              </figure>
           </div>
          </div>
        </header>
     </section>
-</main>
   <section id="features">
-    <div class="container">
-     <div class="row__narrow">
-      <h3 class="section__tag"><span class="purple"> FEATURES </span>     
+  <div class="container">
+    <div class="row__narrow">
+
+      <h3 class="section__tag">
+        <span class="purple">FEATURES</span>
       </h3>
+
       <h2 class="section__title">
-       We have Amazing <span class="purple"> Services </span>
+        We have Amazing <span class="purple">Services</span>
       </h2>
-      <div class="section__para">
+
+      <p class="section__para">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-      </div>
-      <div class="feature">
-        <div class="feature__row">
-          <figure class="feature__img--wrapper"> 
-            <img class="feature__img" src="./assets/shield-icon.svg" alt="shield icon">
-          </figure>
+      </p>
 
-          <div class="feature__text">
-            <h2 class="feature__title">Secure</h2>
-            <p class="feature__para">
-              Lorem ipsum donor amet siti ceali ut enim ad minim veniam, quis nostrud.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="feature">
-        <div class="feature__row">
-          <figure class="feature__img--wrapper">
-            <img class="feature__img" src="./assets/support-icon.svg" alt="support">
-          </figure>
+      <div class="features">
 
-          <div class="feature__text">
-            <h2 class="feature__title">24/7 Support</h2>
-            <p class="feature__para">
-              Lorem ipsum donor amet siti ceali ut enim ad minim veniam, quis nostrud.
-            </p>
-           </div>
-        </div>
-      </div>
-      <div class="feature">
-        <div class="feature__row">
-          <figure class="feature__img--wrapper">
-            <img class="feature__img" src="./assets/customize-icon.svg" alt="custom">
-          </figure>
-
-          <div class="feature__text">
-            <h2 class="feature__title">Customizable</h2>
-            <p class="feature__para">
-              Lorem ipsum donor amet siti ceali ut enim ad minim veniam, quis nostrud.
-            </p>
-           </div>
-          </div>
-        </div>
-      <div class="feature">
-         <div class="feature__row">
-           <figure class="feature__img--wrapper">
-             <img class="feature__img" src="./assets/reliable-icon.svg" alt="reliable">
-           </figure>
-
-           <div class="feature__text">
-             <h2 class="feature__title">Reliable</h2>
-             <p class="feature__para">
-               Lorem ipsum donor amet siti ceali ut enim ad minim veniam, quis nostrud.
-             </p>
+        <div class="feature">
+          <div class="feature__row">
+            <figure class="feature__img--wrapper">
+              <img class="feature__img" src="./assets/shield-icon.svg" alt="Shield Icon">
+            </figure>
+            <div class="feature__text">
+              <h2 class="feature__title">Secure</h2>
+              <p class="feature__para">
+                Lorem ipsum donor amet siti ceali ut enim ad minim veniam, quis nostrud.
+              </p>
             </div>
           </div>
         </div>
-      <div class="feature">
-        <div class="feature__row">
-          <figure class="feature__img--wrapper">
-            <img class="feature__img" src="./assets/fast-icon.svg" alt="fast">
-          </figure>
 
-          <div class="feature__text">
-            <h2 class="feature__title">Fast</h2>
-            <p class="feature__para">
-              Lorem ipsum donor amet siti ceali ut enim ad minim veniam, quis nostrud.
-            </p>
+        <div class="feature">
+          <div class="feature__row">
+            <figure class="feature__img--wrapper">
+              <img class="feature__img" src="./assets/support-icon.svg" alt="Support Icon">
+            </figure>
+            <div class="feature__text">
+              <h2 class="feature__title">24/7 Support</h2>
+              <p class="feature__para">
+                Lorem ipsum donor amet siti ceali ut enim ad minim veniam, quis nostrud.
+              </p>
+            </div>
           </div>
         </div>
-      <div class="feature">
-        <div class="feature__row">
-          <figure class="feature__img--wrapper">
-           <img class="feature__img" src="./assets/simple-icon.svg" alt="simple">
-          </figure>
 
-          <div class="feature__text">
-            <h2 class="feature__title">Easy</h2>
-            <p class="feature__para">
-              Lorem ipsum donor amet siti ceali ut enim ad minim veniam, quis nostrud.
-            </p>
+        <div class="feature">
+          <div class="feature__row">
+            <figure class="feature__img--wrapper">
+              <img class="feature__img" src="./assets/customize-icon.svg" alt="Customizable Icon">
+            </figure>
+            <div class="feature__text">
+              <h2 class="feature__title">Customizable</h2>
+              <p class="feature__para">
+                Lorem ipsum donor amet siti ceali ut enim ad minim veniam, quis nostrud.
+              </p>
+            </div>
           </div>
         </div>
+
+        <div class="feature">
+          <div class="feature__row">
+            <figure class="feature__img--wrapper">
+              <img class="feature__img" src="./assets/reliable-icon.svg" alt="Reliable Icon">
+            </figure>
+            <div class="feature__text">
+              <h2 class="feature__title">Reliable</h2>
+              <p class="feature__para">
+                Lorem ipsum donor amet siti ceali ut enim ad minim veniam, quis nostrud.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="feature">
+          <div class="feature__row">
+            <figure class="feature__img--wrapper">
+              <img class="feature__img" src="./assets/fast-icon.svg" alt="Fast Icon">
+            </figure>
+            <div class="feature__text">
+              <h2 class="feature__title">Fast</h2>
+              <p class="feature__para">
+                Lorem ipsum donor amet siti ceali ut enim ad minim veniam, quis nostrud.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="feature">
+          <div class="feature__row">
+            <figure class="feature__img--wrapper">
+              <img class="feature__img" src="./assets/simple-icon.svg" alt="Simple Icon">
+            </figure>
+            <div class="feature__text">
+              <h2 class="feature__title">Easy</h2>
+              <p class="feature__para">
+                Lorem ipsum donor amet siti ceali ut enim ad minim veniam, quis nostrud.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
+  </div>
+
+<section id="quality">
+  <div class="container">
+    <div class="row quality__row">
+      <div class="quality__description">
+       <h3 class="section__tag">
+        <span class="purple">QUALITY WORK</span>
+       </h3>
+       <h2 class="section__title">Designed & Developed by<span class="purple"> Professionals</span></h2>
+       <p class="section__para">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim quam cupiditate commodi qui excepturi laborum adipisci officiis, possimus. Reiciendis?
+       </p>
+       <button class="btn">Learn More</button>
+      </div>
+       <figure class="quality__img--wrapper">
+        <img src="./assets/hero-screen-shot.png" alt="Hero Screenshot">
+       </figure>
+    </div>
+  </div>
+</section>
+<section id="steps">
+  <div class="container">
+    <div class="row">
+      <figure class="steps__img--wrapper">
+        <img src="./assets/hero-screenshot-2.png" alt="Steps Screenshot">
+      </figure>
+      <div class="steps__description">
+       <h2 class="section__tag"><span class="purple">STEPS</span>
+       </h2>
+       <h3 class="section__title"> Easy to <span class="purple">Get Started</span></h3>
+      </div>
+      <div class="steps__list">
+        <!-- Step 01 -->
+        <!-- Step 02 -->
+        <!-- Step 03 -->
+      </div>
+     </div>
+   </div>
+        <div class="step">
+          <div class="step__number">01</div>
+           <div class="step__description">
+              <div class="step__title">Register</div>
+              <p class="step__para">Create an account with us using Google or Facebook.
+              </p>
+           </div>
+         </div>
+ 
+        <div class="step">
+          <div class="step__number">02</div>
+           <div class="step__description">
+            <div class="step__title">Download</div>
+            <p class="step__para">Browse and Download the template that you like from the marketplace.
+            </p>
+          </div>
+        </div>
+
+        <div class="step">
+          <div class="step__number">03</div>
+           <div class="step__description">
+              <div class="step__title">Run</div>
+              <p class="step__para">Follow the instructions to setup and customize the template to your needs.         
+              </p>
+           </div>
+        </div>
+      </div>
   </section>
-
-
-
-       
+<section id="values">
+  <div class="container">
+    <div class="row">
+      <h2 class="section__tag">
+        <span class="purple">VALUES</span>
+      </h2>
+      <h3 class="section__title">We Always Abide by Our <span class="purple">Principles</span>
+      </h3>
+      <p class="section__para">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      </p>
+    </div>
+  </div>
+</section>
