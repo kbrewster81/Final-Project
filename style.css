@@ -470,18 +470,17 @@ STEPS ↓
 
 
 .steps__description { 
-   width: 50%
-}
-
-.steps__description { 
-    padding-left: 64px;
+   width: 50%;
+   padding-left: 64px;
 }
 
 
-.step__list {
+
+
+.steps__list {
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    align-items: flex-start;
 }
 
 
@@ -500,11 +499,9 @@ STEPS ↓
     align-items: center;
 }
 
-div {
-    display: block;
-}
 
-#step .step__title {
+
+.step__title {
     font-size: 20px;
     font-weight: 600;
     color: rgb(36, 62, 99);
@@ -518,7 +515,6 @@ div {
     font-size: 36px;
     font-weight: 600;
     margin-right: 24px;
-    text-align: left;
 }
 
 
@@ -527,16 +523,23 @@ div {
 }
 
 .img {
-    align-items:left;
+    align-items: right;
     width: 100%;
 }
 
-#steps .section__title {
-    display: flex;
-    justify-content: center;
-    gap: 6px;
+.section__title {
+    font-size: 48px;
     font-weight: 900;
+    line-height: 1.25;
+    color: #243e63;
 }
+
+
+.purple {
+    color: #6415ff;
+    display: inline;
+}
+
 
 /* 
 
