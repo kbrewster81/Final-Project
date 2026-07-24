@@ -669,13 +669,17 @@ PRICING ↓
 */
 
 
-
 .plans {
     display: flex;
     position: relative;
     flex-direction: row;
     width: 100%;
     justify-content: space-between;
+}
+
+.plan {
+    width: 100%;
+    max-width: 384px;
 }
 
 
@@ -688,14 +692,6 @@ PRICING ↓
     line-height: 1.625;
 }
 
-.plan.plan:nth-child(1) .plan__bottom { 
-    padding-left: 4rem;
-    padding-right: 4rem;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
 
 #pricing .row {
     display: flex;
@@ -705,6 +701,7 @@ PRICING ↓
 
 .plan:nth-child(1) .plan__stripe {
     color: #f7fafc;
+    background: linear-gradient(115deg, rgb(56, 178, 172) 0%, rgb(129, 230, 217) 100%);
     position: absolute;
     left: 0;
     right: 0;
@@ -754,14 +751,13 @@ PRICING ↓
     line-height: 1.5;
 }
 
-
 .plan:nth-child(1) .plan__button { 
     color:#f7fafc;
     background: linear-gradient(115deg, rgb(56, 178, 172) 0%, rgb(129, 230, 217) 100%);
-    padding: 0.75rem;
+    padding: 1rem 2rem;
     font-weight: 700;
     transition: all 300ms ease;
-    width: 100px;
+    width: 100%;
     border-radius: 9999px;
     padding-top: 1rem;
     padding-bottom: 1rem;
@@ -773,14 +769,10 @@ PRICING ↓
 }
 
 .plan:nth-child(1) .plan__button:hover {
-    translate: (1px, -1px);
+    transform: translate(1px, -1px);
 }
 
 
-.plan {
-    width: 100%;
-    max-width: 384px;
-}
 
 .plan:nth-child(2) { 
     background: linear-gradient(135deg, rgb(76, 81, 191) 0%, rgb(102, 126, 234) 100%);
