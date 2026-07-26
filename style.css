@@ -15,7 +15,9 @@ body {
 
 img {
   width: 100%;
+  height: auto;
 }
+
 
 .row {
   width: 100%;
@@ -60,16 +62,6 @@ NAVBAR ↓
   align-items: center;
 }
 
-.nav__logo {
-  display: flex;
-  align-items: center;
-  margin: 8px 0;
-  gap: 8px;
-  text-decoration: none;
-  font-size: 24px;
-  font-weight: 900;
-  padding-bottom: 4px;
-}
 
 .nav__logo img {
   width: 40px;
@@ -173,6 +165,8 @@ HEADER / ABOUT US ↓
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-top: 32px;
+  margin-bottom: 32px;
 }
 
 .header__description {
@@ -190,9 +184,21 @@ h1 {
   max-width: 768px;
 }
 
-.header__image {
+.header__customers {
   width: 100%;
-  max-width: 768px;
+  max-width: 448px;
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+.header__customers--title {
+  font-size: 14px;
+  font-weight: 600;
+  color: #7c8ba1;
+  margin-top: 80px;
+  margin-bottom: 16px;
+  letter-spacing: 1.6px;
+  text-transform: uppercase;
 }
 
 .header__image--hero {
@@ -263,7 +269,10 @@ header .row {
   margin-top: 16px;
   padding-right: 128px;
   opacity: 0.5;
+  margin-top: 32px;
+  margin-bottom: 32px;
 }
+
 
 /* 
 
@@ -272,8 +281,8 @@ FEATURES ↓
 */
 
 .feature__img {
-  width: 80px;
-  height: 80px;
+  width: 24px;
+  height: 24px;
 }
 
 .features__para {
@@ -290,7 +299,7 @@ FEATURES ↓
   max-width: 576px;
 }
 
-.section__para {
+#features .section__para {
   font-size: 18px;
   font-weight: 500;
   max-width: 576px;
@@ -300,9 +309,9 @@ FEATURES ↓
   line-height: 1.6;
 }
 
-.section__title {
+#features .section__title {
   text-align: center;
-  font-size: 16px;
+  font-size: 48px;
   font-weight: 900;
   color: rgb(36, 62, 99);
   line-height: 1.5;
@@ -314,7 +323,7 @@ FEATURES ↓
   display: flex;
 }
 
-.features .row__narrow {
+#features .row__narrow {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -323,6 +332,7 @@ FEATURES ↓
 h3 {
   display: flex;
   justify-content: center;
+  align-items: center;
   text-align: center;
   font-weight: 700;
   color: rgb(36, 62, 99);
@@ -795,8 +805,7 @@ PRICING ↓
   background: linear-gradient(
     115deg,
     rgb(245, 101, 101) 0%,
-    rgb(254, 178, 178) 100%
-  );
+    rgb(254, 178, 178) 100%:
 }
 
 /* 
@@ -864,14 +873,11 @@ TESTIMONIALS ↓
   line-height: 1.5;
 }
 
-img {
-  max-width: 50%;
-  height: auto;
-}
+
 
 .testimonial__img--wrapper {
-  width: 80px;
-  height: 80px;
+  width:50%;
+  height: 50%;
   border-radius: 50%;
   overflow: hidden;
   flex-shrink: 0;
