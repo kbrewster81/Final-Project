@@ -291,8 +291,7 @@ h1 {
 }
 
 .header__image--hero {
-  width: calc(100% + 50%);
-  max-width: 768px;
+  width: 100%;
 }
 
 
@@ -484,6 +483,7 @@ QUALITY WORK ↓
 #quality .section__title {
   text-align: left;
   line-height: 1.25;
+  width: 60%;
 }
 
 .section__title {
@@ -1543,7 +1543,7 @@ MOBILE RESPONSIVENESS ↓
 #quality .section__para,
 #values .section__para,
 #quality .section__tag {
-  text-align: center;
+  text-align: left;
 }
 
 .values__container {
@@ -1555,10 +1555,9 @@ MOBILE RESPONSIVENESS ↓
 
 .header__description,
 .header__img--wrapper {
-  width: 100%;
+  width: 50%;
   max-width: 512px;
   text-align: center;
-  align-items: center;
 }
 
 .header__img--wrapper {
