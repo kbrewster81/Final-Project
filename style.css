@@ -1516,68 +1516,129 @@ MOBILE RESPONSIVENESS ↓
 }
 
 @media (max-width: 768px) {
+  section {
+    padding: 0 24px;
+  }
+
+  .container {
+    padding: 64px 0;
+  }
+
+  .section__title {
+    font-size: 36px;
+    line-height: 1.2;
+    text-align: center;
+  }
+
+  .section__para {
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: center;
+    max-width: 448px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   #quality .row,
   #values .row {
     flex-direction: column-reverse;
+    align-items: center;
   }
+
   #steps .row,
   #testimonials .row {
     flex-direction: column;
     align-items: center;
   }
-  #pricing .row {
-    margin-top: 40px;
+
+  .quality__description,
+  .steps__description,
+  .values__description,
+  .testimonials__description {
+    width: 100%;
+    max-width: 448px;
+    padding: 0;
+    margin-top: 48px;
+    text-align: center;
   }
-#quality .quality__description,
-.quality__img--wrapper,
-.values__description,
-.values__img--wrapper {
-  width: 100%;
-  max-width: 448px;
-}
 
-#quality .quality__description,
-.values__description {
-  padding-right: 0;
-  text-align: center;
-}
-
-}
-
-#quality .section__para,
-#values .section__para,
-#quality .section__tag {
-  text-align: left;
-}
-
-
-
-.header__description,
-.header__img--wrapper {
-  width: 50%;
-  text-align: center;
-}
-
-.header__img--wrapper {
-  margin-top: 48px;
+  .quality__img--wrapper,
+  .steps__img--wrapper,
+  .values__img,
+  .testimonials__img {
+    width: 100%;
+    max-width: 448px;
+  }
 }
 
 @media (max-width: 640px) {
-.header__email {
+  section {
+    padding: 0 20px;
+  }
+
+  .container {
+    padding: 56px 0;
+  }
+
+  h1 {
+    font-size: 32px;
+    line-height: 1.2;
+  }
+
+  .section__title {
+    font-size: 30px;
+    line-height: 1.25;
+  }
+
+  .header__description--para {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  .header__email {
+    width: 100%;
+    max-width: 448px;
     flex-direction: column;
     height: auto;
-}
+  }
 
-.header__email--input {
-  position: static;
-  padding: 16px 32px;
-}
+  .header__email--input,
+  .header__email--btn {
+    width: 100%;
+    position: static;
+  }
 
-.header__email--btn {
-  width: 100%;
-  height: auto;
-  padding: 16px 0;
-  margin: 16px 0 0;
-}
+  .header__email--input {
+    padding: 16px 24px;
+    text-align: center;
+  }
 
+  .header__email--btn {
+    margin-top: 12px;
+    padding: 16px 0;
+  }
+
+  .plan {
+    max-width: 100%;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .plan__price {
+    font-size: 40px;
+  }
+
+  .start__row {
+    padding: 0 24px;
+  }
+
+  .start__title,
+  .start__buttons {
+    width: 100%;
+  }
+
+  .start__button {
+    width: 100%;
+    text-align: center;
+  }
 }
